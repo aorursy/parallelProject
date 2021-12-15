@@ -17,13 +17,13 @@ app.use("/", router);
 
 /* Connection to MySQL */
 const mysql = require("mysql2");
-const { connect } = require("http2");
-var connection = mysql.createConnection({
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USERNAME,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE,
-});
+//const { connect } = require("http2");
+//var connection = mysql.createConnection({
+//    host: process.env.MYSQL_HOST,
+//    user: process.env.MYSQL_USERNAME,
+//    password: process.env.MYSQL_PASSWORD,
+//    database: process.env.MYSQL_DATABASE,
+//});
 // module.exports = connection;
 
 
@@ -92,6 +92,6 @@ router.get("/user", function (req, res) {
     });
 });
 
-app.listen(process.env.PORT, function () {
-    console.log("Server listening at Port " + process.env.PORT);
+app.listen(3000, function () {
+    console.log("Server listening at Port " + "3000");
 });

@@ -2,7 +2,7 @@
   "name": "yeah",
   "version": "1.0.0",
   "description": "parallel proj ver 1",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
